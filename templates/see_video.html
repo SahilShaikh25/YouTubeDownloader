@@ -12,6 +12,7 @@
 
 
 <body>
+    <center> <h1> <a href="{{ url_for('index') }}"> Home </a></h1></center>
     <h1>YouTube Downloader App</h1>    
     <form action="{{ url_for('see_video') }}" method="POST">
         <h3>{{ url.title }}</h3><br><br>
@@ -23,8 +24,6 @@
         <input type="submit" value="Download" onclick="show()">
     </form>
     <div id="show"></div>
-
-    <center> <h1> <a href="{{ url_for('index') }}">Home</a></h1></center>
 
 </body>
 </html>
